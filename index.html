@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Squares</title>
+	<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">-->
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="nav">
+		<ul>
+			<li><a href="" title=""><h1>Squares <small>v.0.0.2</small></h1></a></li>
+		</ul>
+	</nav>
+
+	<div id="options_">
+		<div class="left">
+			<div class="form">
+				<label>Color: </label>
+				<input type="color" id="color" name="color" value="#963030" onChange="changeColorVal(color.value)">
+			</div>
+			<div class="form">
+				<label>Range: </label>
+				<input type="range" id="range" name="range" value="15" min="0" max="50" onChange="changeRangeVal(range.value)">
+			</div>
+		</div>
+		<div class="right">
+			<div class="form">
+				<a onClick="go()" class="button">Go!</a>
+				<a id="cleanButton" onClick="clean()" class="button">Clean!</a>
+			</div>
+		</div>
+	</div>
+	<div id="content_">
+	</div>
+	<div id="footer_">
+		<h5>Powered by: <a href="//www.twitter.com/admort__">@admort__</a></h5>
+	</div>
+	
+
+
+
+	<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" defer></script>-->
+	<script src="js/script.js"></script>
+</body>
+</html>
